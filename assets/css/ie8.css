@@ -1,8 +1,55 @@
 /*
-	Future Imperfect by HTML5 UP
+	Highlights by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+/* Basic */
+
+	body, html {
+		height: 100%;
+	}
+
+	html {
+		background: none;
+	}
+
+/* List */
+
+	ul.actions li {
+		padding: 0 0 0 1em;
+	}
+
+		ul.actions li:first-child {
+			padding-left: 0;
+		}
+
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		border: solid 2px #dddddd;
+		position: relative;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
+		line-height: 3em;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		font-size: 3em;
+	}
+
+		input[type="checkbox"] + label:before,
+		input[type="radio"] + label:before {
+			display: none;
+		}
 
 /* Button */
 
@@ -11,62 +58,90 @@
 	input[type="button"],
 	button,
 	.button {
-		border: solid 1px #dedede;
+		border: solid 2px #dddddd;
 	}
 
-/* Form */
+/* Main BG */
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	select,
-	textarea {
-		border: solid 1px #dedede;
+	.main-bg {
+		z-index: 0;
 	}
 
-/* Post */
+/* Main */
 
-	.post {
-		border: solid 1px #dedede;
+	.main {
+		background-size: cover;
 	}
 
-		.post > header {
-			border-bottom: solid 1px #dedede;
+		.main .container {
+			background: #fff;
+			border-top: solid 1px #dddddd;
+			position: relative;
+			z-index: 1;
 		}
 
-/* Mini Post */
+		.main .goto-next {
+			text-decoration: none;
+		}
 
-	.mini-post {
-		border: solid 1px #dedede;
-	}
+			.main .goto-next:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			.main .goto-next:before {
+				color: #dddddd;
+				content: '\f063';
+				display: block;
+				font-size: 2em;
+				height: 2em;
+				left: 0;
+				line-height: 2em;
+				position: absolute;
+				text-align: center;
+				text-indent: 0;
+				top: 0;
+				width: 2em;
+			}
 
 /* Header */
 
 	#header {
-		border-bottom: solid 1px #dedede;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+		background-image: url("../../images/bg.jpg");
+		background-size: cover;
+		height: 100%;
 	}
 
-		#header .links {
-			border-left: solid 1px #dedede;
+		#header:after {
+			min-height: 100%;
 		}
 
-		#header .main ul li {
-			border-left: solid 1px #dedede;
+		#header header {
+			position: relative;
+			z-index: 1;
 		}
 
-/* Sidebar */
+		#header .container {
+			background: #fff;
+			z-index: 1;
+		}
 
-	#sidebar > * {
-		border-top: solid 1px #dedede;
+/* Footer */
+
+	#footer {
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+		background-image: url("../../images/bg.jpg");
+		background-size: cover;
 	}
 
-/* Menu */
-
-	#menu {
-		border-left: solid 1px #dedede;
-	}
-
-		#menu > * {
-			border-top: solid 1px #dedede;
+		#footer .container {
+			background: #fff;
+			border-top: solid 1px #dddddd;
+			position: relative;
+			z-index: 1;
 		}
